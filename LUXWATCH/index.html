@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LUXWATCH — zamonaviy va klassik qo'l soatlari do'koni"
+    />
+    <title>LUXWATCH — Soatlar do'koni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      ✦ Barcha buyurtmalar uchun bepul yetkazib berish — LUXWATCH
+    </div>
+    <header class="header" id="home">
+      <a class="logo" href="#home">LUX<span>WATCH</span><i>®</i></a>
+      <nav class="nav" id="nav">
+        <a class="active" href="#home">Bosh sahifa</a>
+        <a href="#catalog">Katalog</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Qidirish">
+          ⌕
+        </button>
+        <button class="cart-btn" id="cartOpen">
+          Savat <span id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuToggle" aria-label="Menyu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">VAQT — ENG QIMMAT BOYLIK</p>
+          <h1>Har bir soniyada<br /><em>o'z uslubingiz.</em></h1>
+          <p class="hero-copy">
+            Did va nafislikni birlashtirgan maxsus soatlar kolleksiyasi bilan
+            tanishing.
+          </p>
+          <a class="primary-btn" href="#catalog"
+            >Kolleksiyani ko'rish <span>↗</span></a
+          >
+          <div class="hero-note">
+            <b>01 / 03</b><span>Yangi kolleksiya · 2026</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-glow"></div>
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1100&q=90"
+            alt="Zamonaviy qo'l soati"
+          />
+          <div class="hero-tag">
+            <span>NEW</span><b>TIMELESS<br />COLLECTION</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div>
+          <span>✧</span>
+          <p><b>Original sifat</b><small>Sinovdan o'tgan mahsulotlar</small></p>
+        </div>
+        <div>
+          <span>♧</span>
+          <p><b>Bepul yetkazish</b><small>O'zbekiston bo'ylab</small></p>
+        </div>
+        <div>
+          <span>◷</span>
+          <p><b>12 oy kafolat</b><small>Ishonchli xizmat</small></p>
+        </div>
+        <div>
+          <span>◇</span>
+          <p><b>Qulay to'lov</b><small>Tez va xavfsiz</small></p>
+        </div>
+      </section>
+
+      <section class="catalog section" id="catalog">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BIZNING TANLOV</p>
+            <h2>Ommabop <em>soatlar</em></h2>
+          </div>
+          <p class="muted">Har qanday vaziyat uchun<br />o'ziga xos dizayn.</p>
+        </div>
+        <div class="catalog-tools">
+          <div class="filters" id="filters">
+            <button class="filter active" data-category="Barchasi">
+              Barchasi
+            </button>
+            <button class="filter" data-category="Erkaklar">Erkaklar</button>
+            <button class="filter" data-category="Ayollar">Ayollar</button>
+            <button class="filter" data-category="Sport">Sport</button>
+            <button class="filter" data-category="Klassik">Klassik</button>
+          </div>
+          <label class="sort-label"
+            >Saralash
+            <select id="sortSelect">
+              <option value="default">Tavsiya etilgan</option>
+              <option value="low">Arzonidan</option>
+              <option value="high">Qimmatidan</option>
+            </select>
+          </label>
+        </div>
+        <div class="search-wrap" id="searchWrap">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Soat nomini qidiring..."
+          /><button id="searchClose">✕</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>
+          Bu bo'limda mahsulot topilmadi.
+        </p>
+      </section>
+
+      <section class="story section" id="about">
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=85"
+            alt="Soat detallari"
+          /><span>EST. 2020</span>
+        </div>
+        <div class="story-content">
+          <p class="eyebrow">LUXWATCH HAQIDA</p>
+          <h2>Vaqtni his eting.<br /><em>Uslubni tanlang.</em></h2>
+          <p class="muted">
+            Bizning maqsadimiz — kundalik hayotingizga nafislik va ishonch
+            qo'shadigan soatlarni taqdim etish. Har bir model o'ziga xos
+            xarakter va didni ifodalaydi.
+          </p>
+          <a href="#contact" class="text-link">Biz bilan bog'laning ↗</a>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <p class="eyebrow">YANGILIKLARDAN XABARDOR BO'LING</p>
+        <h2>Yangi kolleksiyalarni <em>birinchi</em> bo'lib ko'ring.</h2>
+        <form id="subscribeForm">
+          <input type="email" placeholder="Email manzilingiz" required /><button
+            type="submit"
+          >
+            Obuna bo'lish ↗
+          </button>
+        </form>
+        <small id="subscribeMessage"
+          >Maxsus takliflar va yangiliklar sizni kutmoqda.</small
+        >
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="#home">LUX<span>WATCH</span><i>®</i></a>
+      <p>Vaqtga munosabatingizni o'zgartiring.</p>
+      <div>
+        <a href="#home">Bosh sahifa</a><a href="#catalog">Katalog</a
+        ><a href="#about">Biz haqimizda</a>
+      </div>
+      <small>© 2026 LUXWATCH. Barcha huquqlar himoyalangan.</small>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Savat">
+      <div class="drawer-head">
+        <div>
+          <p class="eyebrow">SIZNING TANLOVINGIZ</p>
+          <h2>Savat <span id="drawerCount">(0)</span></h2>
+        </div>
+        <button class="close-btn" id="cartClose">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-bottom">
+        <div class="total-row">
+          <span>Jami</span><b id="cartTotal">0 so'm</b>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">
+          Buyurtma berish <span>↗</span></button
+        ><small
+          >Yetkazib berish bepul. Buyurtma tasdiqlanishi demo rejimida.</small
+        >
+      </div>
+    </aside>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
